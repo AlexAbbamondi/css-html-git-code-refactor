@@ -30,13 +30,14 @@ header h1 .seo {
 
 /* Nav css */
 nav {
+  display: flex;
   padding-top: 15px;
   margin-right: 20px;
-  float: right;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   display: inline;
-  list-style-type: none;
+  list-style: none;
+  float: right;
 }
 
 li {
@@ -140,4 +141,31 @@ footer {
 
 footer h2 {
   font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+  main {
+    justify-content: center;
+  }
+
+  header {
+    height: 200px;
+    text-align: center;
+  }
+
+  .services {
+    height: 100%;
+    margin: 10px 0;
+  }
+
+  .services img {
+    justify-content: center;
+  }
+  .benefits {
+    float: none;
+    margin: 0 auto;
+    width: 75%;
+  }
+
 }
